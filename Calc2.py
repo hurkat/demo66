@@ -34,9 +34,9 @@ while True:
             print(num1, "*", num2, "=", Multiplication.multiply(num1, num2))
 
         elif choice == '4':
-            try
+            try:
                 print(num1, "/", num2, "=", Division.divide(num1, num2))
-            except ZeroDivideError:
+            except ZeroDivisionError:
                 print("Division by 0 is not allowed")
         
         # check if user wants another calculation
