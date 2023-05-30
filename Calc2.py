@@ -1,5 +1,5 @@
 # This function adds two numbers
-import addition
+import Addition
 import Subtraction
 import Multiplication
 import Division
@@ -34,7 +34,10 @@ while True:
             print(num1, "*", num2, "=", Multiplication.multiply(num1, num2))
 
         elif choice == '4':
-            print(num1, "/", num2, "=", Division.divide(num1, num2))
+            try
+                print(num1, "/", num2, "=", Division.divide(num1, num2))
+            except ZeroDivideError:
+                print("Division by 0 is not allowed")
         
         # check if user wants another calculation
         # break the while loop if answer is no
