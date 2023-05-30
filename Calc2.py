@@ -1,5 +1,5 @@
 # This function adds two numbers
-import Addition
+import addition
 import Subtraction
 import Multiplication
 import Division
